@@ -1,7 +1,7 @@
-package com.benit.svc2.controller;
+package com.benit.svc2.user.controller;
 
-import com.benit.svc2.dto.UserDto;
-import com.benit.svc2.service.UserService;
+import com.benit.svc2.user.dto.UserDto;
+import com.benit.svc2.user.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

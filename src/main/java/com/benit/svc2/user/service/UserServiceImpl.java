@@ -1,6 +1,6 @@
-package com.benit.svc2.service;
+package com.benit.svc2.user.service;
 
-import com.benit.svc2.dto.UserDto;
+import com.benit.svc2.user.dto.UserDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

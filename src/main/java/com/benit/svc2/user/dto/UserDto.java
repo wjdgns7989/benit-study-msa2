@@ -1,4 +1,4 @@
-package com.benit.svc2.dto;
+package com.benit.svc2.user.dto;
 
 import lombok.Builder;
 import lombok.Getter;
