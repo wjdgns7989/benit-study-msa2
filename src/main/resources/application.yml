@@ -1,7 +1,7 @@
 # 스프링 관련설정
 spring:
   application:
-    name: mvc-svc1-user
+    name: mvc-svc2-user
 
 
 

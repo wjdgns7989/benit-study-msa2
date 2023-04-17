@@ -1,0 +1,105 @@
+2023-04-18 04:20:20.131 INFO  --- [main      ] [Svc2Application:51] logStarting :  Starting Svc2Application using Java 17.0.4 with PID 12628 (D:\SpringbootWorkingDirectory\svc2\benit-study-msa2\target\classes started by KimJeongHoon in D:\SpringbootWorkingDirectory\svc2\benit-study-msa2)
+2023-04-18 04:20:20.142 INFO  --- [main      ] [Svc2Application:632] logStartupProfileInfo :  No active profile set, falling back to 1 default profile: "default"
+2023-04-18 04:20:21.345 WARN  --- [main      ] [ClassPathMapperScanner:44] warn : MYBATIS No MyBatis mapper was found in '[com.benit.svc2]' package. Please check your configuration.
+2023-04-18 04:20:22.356 INFO  --- [main      ] [TomcatWebServer:108] initialize :  Tomcat initialized with port(s): 80 (http)
+2023-04-18 04:20:22.376 INFO  --- [main      ] [StandardService:173] log :  Starting service [Tomcat]
+2023-04-18 04:20:22.377 INFO  --- [main      ] [StandardEngine:173] log :  Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-18 04:20:22.592 INFO  --- [main      ] [[/]:173] log :  Initializing Spring embedded WebApplicationContext
+2023-04-18 04:20:22.594 INFO  --- [main      ] [ServletWebServerApplicationContext:291] prepareWebApplicationContext :  Root WebApplicationContext: initialization completed in 2305 ms
+2023-04-18 04:20:22.705 DEBUG --- [main      ] [HikariConfig:968] attemptFromContextLoader :  Driver class net.sf.log4jdbc.sql.jdbcapi.DriverSpy found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b
+2023-04-18 04:20:22.953 DEBUG --- [main      ] [HikariConfig:1100] logConfiguration :  MSA-SVC1 Connection Pool - configuration:
+2023-04-18 04:20:22.961 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  allowPoolSuspension.............false
+2023-04-18 04:20:22.965 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  autoCommit......................true
+2023-04-18 04:20:22.966 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  catalog.........................none
+2023-04-18 04:20:22.967 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  connectionInitSql..............."select 1 from dual"
+2023-04-18 04:20:22.968 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  connectionTestQuery............."select 1 from dual"
+2023-04-18 04:20:22.969 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  connectionTimeout...............5000
+2023-04-18 04:20:22.970 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  dataSource......................none
+2023-04-18 04:20:22.970 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  dataSourceClassName.............none
+2023-04-18 04:20:22.971 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  dataSourceJNDI..................none
+2023-04-18 04:20:22.972 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  dataSourceProperties............{password=<masked>}
+2023-04-18 04:20:22.973 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  driverClassName................."net.sf.log4jdbc.sql.jdbcapi.DriverSpy"
+2023-04-18 04:20:22.974 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  exceptionOverrideClassName......none
+2023-04-18 04:20:22.975 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  healthCheckProperties...........{}
+2023-04-18 04:20:22.976 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  healthCheckRegistry.............none
+2023-04-18 04:20:22.976 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  idleTimeout.....................0
+2023-04-18 04:20:22.977 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  initializationFailTimeout.......1
+2023-04-18 04:20:22.978 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  isolateInternalQueries..........false
+2023-04-18 04:20:22.979 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  jdbcUrl.........................jdbc:log4jdbc:oracle:thin:@MSA2_high?TNS_ADMIN=oci/Wallet_MSA2
+2023-04-18 04:20:22.980 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  keepaliveTime...................0
+2023-04-18 04:20:22.981 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  leakDetectionThreshold..........0
+2023-04-18 04:20:22.982 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  maxLifetime.....................0
+2023-04-18 04:20:22.982 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  maximumPoolSize.................5
+2023-04-18 04:20:22.983 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  metricRegistry..................none
+2023-04-18 04:20:22.984 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  metricsTrackerFactory...........none
+2023-04-18 04:20:22.985 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  minimumIdle.....................1
+2023-04-18 04:20:22.986 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  password........................<masked>
+2023-04-18 04:20:22.987 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  poolName........................"MSA-SVC1 Connection Pool"
+2023-04-18 04:20:22.988 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  readOnly........................false
+2023-04-18 04:20:22.989 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  registerMbeans..................false
+2023-04-18 04:20:22.990 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  scheduledExecutor...............none
+2023-04-18 04:20:22.991 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  schema..........................none
+2023-04-18 04:20:22.992 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  threadFactory...................internal
+2023-04-18 04:20:22.992 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  transactionIsolation............default
+2023-04-18 04:20:22.993 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  username........................"ADMIN"
+2023-04-18 04:20:22.994 DEBUG --- [main      ] [HikariConfig:1132] logConfiguration :  validationTimeout...............5000
+2023-04-18 04:20:22.997 INFO  --- [main      ] [HikariDataSource:80] <init> :  MSA-SVC1 Connection Pool - Starting...
+2023-04-18 04:20:24.644 INFO  --- [main      ] [log4j2:365] connectionModified : LOG4JDBC_CONNECTION [ LOG4JDBC_NON_STATEMENT ] 1. Connection opened. {executed in 1628ms} 
+2023-04-18 04:20:24.646 INFO  --- [main      ] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Connection.new Connection returned 
+2023-04-18 04:20:24.646 INFO  --- [main      ] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Connection.getNetworkTimeout() returned 0
+2023-04-18 04:20:24.647 INFO  --- [main      ] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Connection.isReadOnly() returned false
+2023-04-18 04:20:24.647 INFO  --- [main      ] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Connection.getAutoCommit() returned true
+2023-04-18 04:20:24.732 INFO  --- [main      ] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Statement.new Statement returned 
+2023-04-18 04:20:24.732 INFO  --- [main      ] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@59018eed
+2023-04-18 04:20:24.806 INFO  --- [main      ] [log4j2:243] sqlTimingOccurred : LOG4JDBC_SELECT [ LOG4JDBC_SQL ] 1. select 1 from dual  {executed in 72 ms}
+2023-04-18 04:20:24.806 INFO  --- [main      ] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Statement.execute(select 1 from dual) returned true
+2023-04-18 04:20:24.807 INFO  --- [main      ] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Statement.close() returned 
+2023-04-18 04:20:24.808 INFO  --- [main      ] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Connection.getTransactionIsolation() returned 2
+2023-04-18 04:20:24.808 INFO  --- [main      ] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Statement.new Statement returned 
+2023-04-18 04:20:24.809 INFO  --- [main      ] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@6544899b
+2023-04-18 04:20:24.815 INFO  --- [main      ] [log4j2:243] sqlTimingOccurred : LOG4JDBC_SELECT [ LOG4JDBC_SQL ] 1. select 1 from dual  {executed in 6 ms}
+2023-04-18 04:20:24.815 INFO  --- [main      ] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Statement.execute(select 1 from dual) returned true
+2023-04-18 04:20:24.816 INFO  --- [main      ] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Statement.close() returned 
+2023-04-18 04:20:24.816 INFO  --- [main      ] [HikariPool:565] checkFailFast :  MSA-SVC1 Connection Pool - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1bd8afc8
+2023-04-18 04:20:24.819 INFO  --- [main      ] [HikariDataSource:82] <init> :  MSA-SVC1 Connection Pool - Start completed.
+2023-04-18 04:20:24.837 INFO  --- [main      ] [MybatisDBConfig:25] sqlSessionFactory :  *************** Mybatis sqlSessionFactory 초기화 START ***************
+2023-04-18 04:20:25.118 INFO  --- [main      ] [MybatisDBConfig:34] sqlSessionFactory :  *************** Mybatis sqlSessionFactory 초기화 END ***************
+2023-04-18 04:20:25.702 INFO  --- [main      ] [TomcatWebServer:220] start :  Tomcat started on port(s): 80 (http) with context path ''
+2023-04-18 04:20:25.714 INFO  --- [main      ] [Svc2Application:57] logStarted :  Started Svc2Application in 6.433 seconds (process running for 7.15)
+2023-04-18 04:20:47.035 INFO  --- [-80-exec-1] [[/]:173] log :  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-18 04:20:47.036 INFO  --- [-80-exec-1] [DispatcherServlet:532] initServletBean :  Initializing Servlet 'dispatcherServlet'
+2023-04-18 04:20:47.037 INFO  --- [-80-exec-1] [DispatcherServlet:554] initServletBean :  Completed initialization in 1 ms
+2023-04-18 04:20:50.591 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Statement.new Statement returned 
+2023-04-18 04:20:50.591 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@2909efb2
+2023-04-18 04:20:50.597 INFO  --- [-80-exec-2] [log4j2:243] sqlTimingOccurred : LOG4JDBC_SELECT [ LOG4JDBC_SQL ] 1. select 1 from dual  {executed in 5 ms}
+2023-04-18 04:20:50.598 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Statement.execute(select 1 from dual) returned true
+2023-04-18 04:20:50.599 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Statement.close() returned 
+2023-04-18 04:20:50.606 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Connection.getAutoCommit() returned true
+2023-04-18 04:20:50.654 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. PreparedStatement.new PreparedStatement returned 
+2023-04-18 04:20:50.655 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Connection.prepareStatement(SELECT CURRENT_DATE
+        FROM DUAL) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@c38f959
+2023-04-18 04:20:50.667 INFO  --- [-80-exec-2] [log4j2:243] sqlTimingOccurred : LOG4JDBC_SELECT [ LOG4JDBC_SQL ] 1. SELECT CURRENT_DATE FROM DUAL  {executed in 9 ms}
+2023-04-18 04:20:50.668 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. PreparedStatement.execute() returned true
+2023-04-18 04:20:50.685 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_RESULTSET [ LOG4JDBC_JDBC ] 1. ResultSet.new ResultSet returned 
+2023-04-18 04:20:50.686 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@46cd6744
+2023-04-18 04:20:50.693 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_RESULTSET [ LOG4JDBC_JDBC ] 1. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@e0d63f9
+2023-04-18 04:20:50.695 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_RESULTSET [ LOG4JDBC_JDBC ] 1. ResultSet.getType() returned 1003
+2023-04-18 04:20:50.695 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_RESULTSET [ LOG4JDBC_JDBC ] 1. ResultSet.isClosed() returned false
+2023-04-18 04:20:50.695 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_RESULTSET [ LOG4JDBC_JDBC ] 1. ResultSet.next() returned true
+2023-04-18 04:20:50.706 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_RESULTSET [ LOG4JDBC_JDBC ] 1. ResultSet.getString(CURRENT_DATE) returned 2023-04-18 04:20:50
+2023-04-18 04:20:50.707 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_RESULTSET [ LOG4JDBC_JDBC ] 1. ResultSet.isClosed() returned false
+2023-04-18 04:20:50.710 INFO  --- [-80-exec-2] [log4j2:390] resultSetCollected : LOG4JDBC_RESULTSETTABLE [ LOG4JDBC_OTHER ] 
+|--------------------|
+|current_date        |
+|--------------------|
+|2023-04-18 04:20:50 |
+|--------------------|
+
+2023-04-18 04:20:50.710 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_RESULTSET [ LOG4JDBC_JDBC ] 1. ResultSet.next() returned false
+2023-04-18 04:20:50.711 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_RESULTSET [ LOG4JDBC_JDBC ] 1. ResultSet.close() returned void
+2023-04-18 04:20:50.711 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@27d5b57f
+2023-04-18 04:20:50.714 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. PreparedStatement.close() returned 
+2023-04-18 04:20:50.723 INFO  --- [-80-exec-2] [log4j2:197] methodReturned : LOG4JDBC_AUDIT [ LOG4JDBC_JDBC ] 1. Connection.clearWarnings() returned 
+2023-04-18 04:20:50.724 INFO  --- [-80-exec-2] [UserServiceImpl:22] getUsers :  시간 : 2023-04-18 04:20:50
+2023-04-18 04:20:50.726 INFO  --- [-80-exec-2] [UserController:23] lambda$getUsers$0 :  - UserDto(name=김현서, phoneNumber=010-8383-8585, address=영등포구 여의나루로45, age=25)
+2023-04-18 04:20:50.731 INFO  --- [-80-exec-2] [UserController:23] lambda$getUsers$0 :  - UserDto(name=김진수, phoneNumber=010-2424-6653, address=마포구 강변북로22, age=65)

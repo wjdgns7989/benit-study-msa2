@@ -59,7 +59,7 @@ public class MybatisDBConfig {
 
         //config.setJdbcUrl("jdbc:oracle:thin:@MSA_high?TNS_ADMIN=oci/Wallet_MSA");             // 기본 jdbc 드라이버 URㅣ 설정
         //config.setDriverClassName("oracle.jdbc.OracleDriver");                                // 기본 jdbc 드라이버 설정
-        config.setJdbcUrl("jdbc:log4jdbc:oracle:thin:@MSA_high?TNS_ADMIN=oci/Wallet_MSA");      // DriverSpy 드라이버 URL 설정
+        config.setJdbcUrl("jdbc:log4jdbc:oracle:thin:@MSA2_high?TNS_ADMIN=oci/Wallet_MSA2");      // DriverSpy 드라이버 URL 설정
         config.setDriverClassName("net.sf.log4jdbc.sql.jdbcapi.DriverSpy");                     // DriverSpy 드라이버 설정(쿼리 로그출력 시 파라미터 바인딩 된 채로 출력하기위해 사용)
 
         config.setUsername("ADMIN");
