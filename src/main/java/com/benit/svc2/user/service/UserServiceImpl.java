@@ -1,7 +1,9 @@
 package com.benit.svc2.user.service;
 
+import com.benit.svc2.user.dao.UserDao;
 import com.benit.svc2.user.dto.UserDto;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -11,8 +13,13 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
+    @Autowired
+    private UserDao userDao;
+
     public List<UserDto> getUsers() {
         List<UserDto> resultList = new ArrayList<UserDto>();
+
+        log.info("시간 : {}", userDao.getNowDate());
 
         resultList.add(
                 UserDto.builder()
