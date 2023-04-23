@@ -16,30 +16,43 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
 
+    @Override
     public List<UserDto> getUsers() {
-        List<UserDto> resultList = new ArrayList<UserDto>();
+        var resultList = userDao.getUserList();
 
-        log.info("시간 : {}", userDao.getNowDate());
-
-        resultList.add(
-                UserDto.builder()
-                        .name("김현서")
-                        .phoneNumber("010-8383-8585")
-                        .address("영등포구 여의나루로45")
-                        .age(25)
-                        .build()
-        );
-
-        resultList.add(
-                UserDto.builder()
-                        .name("김진수")
-                        .phoneNumber("010-2424-6653")
-                        .address("마포구 강변북로22")
-                        .age(65)
-                        .build()
-        );
+        resultList.forEach(userDto -> {
+            log.info("가게정보 : {}", userDto);
+        });
 
         return resultList;
+    }
+
+    @Override
+    public UserDto selectUser(String userName) {
+        return userDao.selectUser(userName);
+    }
+
+    @Override
+    public int insertUser(UserDto userDto) {
+        return userDao.insertUser(userDto);
+    }
+
+    @Override
+    public void updateUser(UserDto userDto, String userName) {
+        UserDto userDtoInfo = userDao.selectUser(userName);
+
+        userDtoInfo.setPhoneNumber(userDto.getPhoneNumber());
+        userDtoInfo.setAddress(userDto.getAddress());
+        userDtoInfo.setAge(userDto.getAge());
+
+        userDao.updateUser(userDtoInfo);
+
+
+    }
+
+    @Override
+    public void deleteUser(String userName) {
+        userDao.deleteUser(userName);
     }
 
 

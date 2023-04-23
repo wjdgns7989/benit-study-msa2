@@ -4,9 +4,39 @@
 <mapper namespace="query.user">
 
 
-    <select id="getNowDate" resultType="string">
-        SELECT CURRENT_DATE
-        FROM DUAL
+    <select id="getUserList" resultType="com.benit.svc2.user.dto.UserDto">
+        SELECT
+            NAME, PHONE_NUMBER, ADDRESS, AGE
+        FROM TB_USER
     </select>
+
+    <select id="selectUser" parameterType="String" resultType="com.benit.svc2.user.dto.UserDto">
+        SELECT
+        NAME, PHONE_NUMBER, ADDRESS, AGE
+        FROM TB_USER
+        WHERE NAME = #{userName}
+    </select>
+
+    <select id="insertUser" parameterType="com.benit.svc2.user.dto.UserDto">
+        INSERT INTO TB_USER(NAME, PHONE_NUMBER, ADDRESS, AGE)
+        VALUES(#{name}, #{phoneNumber}, #{address}, #{age})
+    </select>
+
+    <update id="updateUser" parameterType="com.benit.svc2.user.dto.UserDto">
+        UPDATE TB_USER
+        SET
+        PHONE_NUMBER = #{phoneNumber},
+        ADDRESS = #{address},
+        AGE = #{age}
+        WHERE
+        NAME = #{name}
+    </update>
+
+    <delete id="deleteUser" parameterType="String">
+        DELETE
+        FROM TB_USER
+        WHERE NAME = #{userName}
+    </delete>
+
 
 </mapper>
