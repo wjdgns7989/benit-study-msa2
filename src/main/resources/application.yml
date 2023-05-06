@@ -15,7 +15,7 @@ eureka:
 server:
 
   # 서비스 포트
-  port: 8082
+  port: 0
 
   # 톰켓 Access log
   tomcat:
