@@ -3,7 +3,13 @@ spring:
   application:
     name: mvc-svc2-user
 
+eureka:
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${random.value}
 
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
 
 # 서버설정
 server:
